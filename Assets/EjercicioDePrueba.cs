@@ -22,13 +22,13 @@ public class EjercicioDePrueba : MonoBehaviour
             switch (letra)
             {
                 case "D":
-                    Debug.Log($" {montoTotal}pesos argentinos equivalen a {dolares} dolares");
+                    Debug.Log($" {montoTotal} pesos argentinos equivalen a {dolares} dolares");
                     break;
                 case "R":
-                    Debug.Log($" {montoTotal}pesos argentinos equivalen a {reales} reales");
+                    Debug.Log($" {montoTotal} pesos argentinos equivalen a {reales} reales");
                     break;
                 case "E":
-                    Debug.Log( $" {montoTotal}pesos argentinos equivalen a {euros} euros");
+                    Debug.Log( $" {montoTotal} pesos argentinos equivalen a {euros} euros");
                     break;
                 default:
                     Debug.Log("opcion de moneda extranjera no valida");
