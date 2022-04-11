@@ -4,31 +4,34 @@ using UnityEngine;
 
 public class EjercicioDePrueba : MonoBehaviour
 {
-    public int montoTotal;
+    public float montoTotal;
     public string letra;
    
     // Start is called before the first frame update
     void Start()
     {
-        int euros = montoTotal/220;
-        int dolares = montoTotal/200;
-        int reales = montoTotal/40;
+        float euros = montoTotal/220;
+        float dolares = montoTotal/200;
+        float reales = montoTotal/40;
         if (montoTotal < 1000 )
         {
             Debug.Log ("“El monto mínimo es $1000");
         }
         else if (montoTotal >= 1000)
         {
-            switch(letra)
+            switch (letra)
             {
                 case "D":
-                    Debug.Log("Tenes " + dolares + " dolares");
+                    Debug.Log($" {montoTotal}pesos argentinos equivalen a {dolares} dolares");
                     break;
                 case "R":
-                    Debug.Log("Tenes " + reales + " reales");
+                    Debug.Log($" {montoTotal}pesos argentinos equivalen a {reales} reales");
                     break;
                 case "E":
-                    Debug.Log("Tenes " + euros + "  euros");
+                    Debug.Log( $" {montoTotal}pesos argentinos equivalen a {euros} euros");
+                    break;
+                default:
+                    Debug.Log("opcion de moneda extranjera no valida");
                     break;
             }
         }
